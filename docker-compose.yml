@@ -9,6 +9,8 @@ services:
     - MYSQL_PASSWORD=secret
     volumes:
     - mysql-data:/var/lib/mysql
+    ports:
+    - "9000:3306"
 
   bookstack:
     image: solidnerd/bookstack:23.10.4
